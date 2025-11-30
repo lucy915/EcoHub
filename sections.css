@@ -1,0 +1,734 @@
+/* ==================== Section Base Styles ==================== */
+.section-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: #083344;
+  margin-bottom: 1rem;
+}
+
+.sub-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #083344;
+  margin-bottom: 2rem;
+}
+
+/* ==================== Muammo (Problems) Section ==================== */
+.muammo-section {
+  padding: 6rem 0;
+  margin: 3rem 0;
+}
+
+.muammo__card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(3, 20, 40, 0.06);
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.muammo__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  filter: blur(2px) saturate(0.9);
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.muammo__card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-muammo {
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.problem-card {
+  border: 2px solid rgba(6, 182, 212, 0.1) !important;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(3, 20, 40, 0.02);
+}
+
+.problem-card:hover {
+  border-color: rgba(6, 182, 212, 0.3) !important;
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.08);
+}
+
+.problem-card .accordion-button {
+  background: transparent !important;
+  color: #083344;
+  font-weight: 700;
+  padding: 1.5rem;
+  border: none;
+  font-size: 1.8rem;
+}
+
+.problem-card .accordion-button:focus {
+  box-shadow: none;
+  color: #06b6d4;
+}
+
+.problem-icon {
+  font-size: 2.4rem;
+  color: #06b6d4;
+  margin-right: 1rem;
+  display: inline-flex;
+}
+
+.accordion-body {
+  padding: 1.5rem;
+  background: rgba(6, 182, 212, 0.02);
+  border-top: 2px solid rgba(6, 182, 212, 0.1);
+  color: #083344;
+  line-height: 1.8;
+  text-align: left;
+}
+
+.accordion-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.accordion-body li {
+  padding: 0.6rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.accordion-body li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #06b6d4;
+  font-weight: bold;
+}
+
+/* ==================== Yechim (Solutions) Section ==================== */
+.yechim-section {
+  padding: 6rem 0;
+  margin: 3rem 0;
+}
+
+.yechim__card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(3, 20, 40, 0.06);
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.yechim__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  filter: blur(2px) saturate(0.9);
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.yechim__card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.solution-card {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, rgba(6, 182, 212, 0.02) 100%);
+  border: 2px solid rgba(6, 182, 212, 0.15);
+  padding: 2.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.solution-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 12px 32px rgba(6, 182, 212, 0.12);
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(6, 182, 212, 0.04) 100%);
+}
+
+.solution-icon {
+  font-size: 4rem;
+  color: #06b6d4;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.solution-card h3 {
+  color: #083344;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.solution-card p {
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 1.6rem;
+}
+
+/* ==================== Hamkorlar (Partners) Section ==================== */
+.hamkorlar-section {
+  padding: 6rem 0;
+  margin: 3rem 0;
+}
+
+.hamkorlar__card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(3, 20, 40, 0.06);
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hamkorlar__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  filter: blur(2px) saturate(0.9);
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.hamkorlar__card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.partner-card {
+  background: #ffffff;
+  border: 1px solid rgba(6, 182, 212, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(3, 20, 40, 0.04);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.partner-card:hover {
+  box-shadow: 0 12px 32px rgba(6, 182, 212, 0.1);
+  border-color: rgba(6, 182, 212, 0.3);
+  transform: translateY(-4px);
+}
+
+.partner-icon {
+  font-size: 3.5rem;
+  color: #06b6d4;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.partner-card h4 {
+  color: #083344;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.partner-card p {
+  color: #2b2b2b;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+/* ==================== Daromad (Revenue) Section ==================== */
+.daromad-section {
+  padding: 6rem 0;
+  margin: 3rem 0;
+}
+
+.daromad__card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(3, 20, 40, 0.06);
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.daromad__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  filter: blur(2px) saturate(0.9);
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.daromad__card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.revenue-card {
+  background: linear-gradient(135deg, #ffffff 0%, rgba(6, 182, 212, 0.03) 100%);
+  border: 2px solid rgba(6, 182, 212, 0.15);
+  padding: 2.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(3, 20, 40, 0.04);
+  height: 100%;
+}
+
+.revenue-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 12px 32px rgba(6, 182, 212, 0.12);
+}
+
+.revenue-number {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.revenue-card h4 {
+  color: #083344;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.revenue-card p {
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 1.5rem;
+}
+
+.revenue-card strong {
+  color: #06b6d4;
+}
+
+/* ==================== Narxlash (Pricing) Section ==================== */
+.narxlash-section {
+  padding: 6rem 0;
+  margin: 3rem 0;
+}
+
+.narxlash__card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(3, 20, 40, 0.06);
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.narxlash__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  filter: blur(2px) saturate(0.9);
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.narxlash__card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.pricing-card {
+  background: #ffffff;
+  border: 2px solid rgba(6, 182, 212, 0.1);
+  padding: 2.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(3, 20, 40, 0.04);
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(6, 182, 212, 0.4);
+  box-shadow: 0 12px 32px rgba(6, 182, 212, 0.15);
+}
+
+.pricing-card.highlighted {
+  border-color: #06b6d4;
+  box-shadow: 0 12px 40px rgba(6, 182, 212, 0.15);
+  transform: scale(1.05);
+}
+
+.pricing-card h4 {
+  color: #083344;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-card .price {
+  font-size: 2.5rem;
+  color: #06b6d4;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+/* ==================== Timeline (Yo‘l xaritasi) ==================== */
+.timeline__card {
+  background: rgba(255,255,255,0.96) !important;
+  border-radius: 14px;
+  padding: 2.5rem;
+  box-shadow: 0 12px 36px rgba(3,20,40,0.06);
+}
+
+.timeline__title {
+  font-size: 2.6rem;
+  color: #083344;
+  font-weight: 800;
+}
+
+.timeline-stepper {
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.timeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 6.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.step-circle {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background: #e6f7f9;
+  color: #06b6d4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  border: 3px solid rgba(6,182,212,0.12);
+  transition: all 0.25s ease;
+}
+
+.timeline-step .step-label {
+  margin-top: 0.6rem;
+  font-size: 1.2rem;
+  color: #083344;
+}
+
+.timeline-step .step-circle.active,
+.timeline-step:hover .step-circle {
+  background: linear-gradient(180deg,#06b6d4,#14b8a6);
+  color: #fff;
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 0 12px 28px rgba(6,182,212,0.18);
+}
+
+.timeline-progress {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  height: 6px;
+  background: rgba(6,182,212,0.12);
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.timeline-progress-bar {
+  height: 100%;
+  width: 40%;
+  background: linear-gradient(90deg,#06b6d4,#14b8a6);
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.timeline-status .list-group-item {
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.timeline-status .list-group-item.active {
+  background: linear-gradient(135deg, rgba(6,182,212,0.06), rgba(6,182,212,0.02));
+  border-left: 4px solid #06b6d4;
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .timeline-stepper { gap: 0.8rem; }
+  .timeline-step { width: 4.8rem; }
+  .step-circle { width: 2.4rem; height: 2.4rem; }
+  .timeline-progress { left: 8%; right: 8%; }
+}
+
+/* Testimonial button override to avoid giant global .btn sizing */
+.testimonial-btn {
+  font-size: 1.25rem !important;
+  padding: 0.45rem 1rem !important;
+  border-radius: 8px !important;
+}
+
+.testimonial__card .img-box {
+  margin-bottom: 1rem;
+}
+
+.pricing-card .desc {
+  color: #2b2b2b;
+  font-size: 1.5rem;
+}
+
+/* ==================== Afzalliklari (Advantages) Section ==================== */
+.afzalliklari-section {
+  padding: 6rem 0;
+  margin: 3rem 0;
+}
+
+.afzalliklari__card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(3, 20, 40, 0.06);
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.afzalliklari__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  filter: blur(2px) saturate(0.9);
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.afzalliklari__card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.advantage-card {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.08) 0%, rgba(6, 182, 212, 0.03) 100%);
+  border: 2px solid rgba(6, 182, 212, 0.2);
+  padding: 2.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.08);
+  height: 100%;
+}
+
+.advantage-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(6, 182, 212, 0.5);
+  box-shadow: 0 16px 48px rgba(6, 182, 212, 0.15);
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.12) 0%, rgba(6, 182, 212, 0.05) 100%);
+}
+
+.advantage-icon {
+  font-size: 4rem;
+  color: #06b6d4;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.advantage-card h4 {
+  color: #083344;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.advantage-card p {
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 1.5rem;
+}
+
+/* ==================== Mijozlar (Customers) Section ==================== */
+.mijozlar-section {
+  padding: 6rem 0;
+  margin: 3rem 0;
+}
+
+.mijozlar__card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(3, 20, 40, 0.06);
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mijozlar__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/banner1.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.08;
+  filter: blur(2px) saturate(0.9);
+  border-radius: 14px;
+  z-index: 0;
+}
+
+.mijozlar__card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.customer-card {
+  background: #ffffff;
+  border: 2px solid rgba(6, 182, 212, 0.1);
+  padding: 2.5rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(3, 20, 40, 0.04);
+  height: 100%;
+}
+
+.customer-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(6, 182, 212, 0.3);
+  box-shadow: 0 12px 32px rgba(6, 182, 212, 0.1);
+}
+
+.customer-icon {
+  font-size: 4rem;
+  color: #06b6d4;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.customer-card h4 {
+  color: #083344;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.customer-card p {
+  color: #2b2b2b;
+  line-height: 1.8;
+  font-size: 1.5rem;
+}
+
+/* ==================== Responsive ==================== */
+@media (max-width: 768px) {
+  .muammo__card,
+  .yechim__card,
+  .hamkorlar__card,
+  .daromad__card,
+  .narxlash__card,
+  .afzalliklari__card,
+  .mijozlar__card {
+    padding: 2rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .solution-card,
+  .partner-card,
+  .revenue-card,
+  .pricing-card,
+  .advantage-card,
+  .customer-card {
+    padding: 1.8rem;
+  }
+
+  .pricing-card.highlighted {
+    transform: scale(1);
+  }
+}
+
+/* ==================== AI Section ==================== */
+.ai-section {
+  padding: 6rem 0;
+  margin: 3rem 0;
+}
+
+.ai__card {
+  position: relative;
+  background: #f4f6f8; /* white-grey background for readability */
+  border-radius: 14px;
+  box-shadow: 0 12px 36px rgba(3, 20, 40, 0.06);
+  overflow: hidden;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #083344;
+}
+
+.ai__card p,
+.ai__card li,
+.ai__card td {
+  color: #083344;
+}
+
+/* ==================== Simple Testimonials Slider ==================== */
+.testimonials-slider { position: relative; max-width: 900px; margin: 0 auto; }
+.testimonials-slider .slide { padding: 2rem; box-sizing: border-box; }
+.slider-prev, .slider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(8,51,68,0.08);
+  border: none;
+  padding: 0.6rem 0.9rem;
+  font-size: 1.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.slider-prev { left: 8px; }
+.slider-next { right: 8px; }
+
+.slider-track { will-change: transform; }
+
+@media (max-width: 768px) {
+  .ai__card { padding: 2rem 1rem; }
+  .slider-prev, .slider-next { font-size: 1.2rem; padding: 0.4rem 0.6rem; }
+}
